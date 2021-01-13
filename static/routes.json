@@ -1,5 +1,12 @@
 {
-  "routes": [],
+  "routes": [
+    {
+      "route": "/page3",
+      "allowedRoles": [
+        "administrator"
+      ]
+    }
+  ],
   "platformErrorOverrides": [
     {
       "errorType": "NotFound",
