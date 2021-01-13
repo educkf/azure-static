@@ -6,6 +6,10 @@
         "administrator"
       ],
       "statusCode": 403
+    },
+    {
+      "route": "/fake3",
+      "serve": "/page2/index.html"
     }
   ],
   "platformErrorOverrides": [
