@@ -10,6 +10,10 @@
     {
       "route": "/fake3",
       "serve": "/page2"
+    },
+    {
+      "route": "/glogin",
+      "serve": "/.auth/login/google"
     }
   ],
   "platformErrorOverrides": [
