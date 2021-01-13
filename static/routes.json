@@ -9,13 +9,18 @@
     },
     {
       "route": "/fake3",
-      "serve": "/page2/index.html"
+      "serve": "/page2"
     }
   ],
   "platformErrorOverrides": [
     {
       "errorType": "NotFound",
       "serve": "/200.html",
+      "statusCode": 200
+    },
+    {
+      "errorType": "Unauthorized_MissingRoles",
+      "serve": "/login",
       "statusCode": 200
     }
   ]
