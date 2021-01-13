@@ -6,6 +6,7 @@
         Static 2
       </h1>
       <nuxt-link to="/">Index</nuxt-link>
+      <nuxt-link to="/page3">page3</nuxt-link>
 
       <div class="my-30">
         <div v-for="post in posts" :key="post.id" class="py-6 border-b">

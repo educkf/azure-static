@@ -3,10 +3,17 @@
     <div>
       <logo />
       <h1 class="title">
-        Static updated
+        Static 3
       </h1>
-      <nuxt-link to="/page2">Page 2</nuxt-link>
-      <nuxt-link to="/page3">Page 3</nuxt-link>
+      <nuxt-link to="/">Index</nuxt-link>
+      <nuxt-link to="/page2">page2</nuxt-link>
+
+      <div class="my-30">
+        <div v-for="user in users" :key="user.id" class="py-6 border-b">
+          {{ user.name }} {{ user.surname }} - {{ user.email }}
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -17,7 +24,22 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  data() {
+    return {
+      users: []
+    }
+  },
+
+  async asyncData ({ params, error }) {
+    const users = await fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(json => json)
+
+    return {
+      users: users
+    }
+  },
 }
 </script>
 
@@ -51,5 +73,19 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.py-6 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.border-b {
+  border-bottom: 1px solid #ddd;
 }
 </style>
