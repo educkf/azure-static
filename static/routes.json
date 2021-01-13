@@ -12,7 +12,7 @@
       "serve": "/page2"
     },
     {
-      "route": "/glogin",
+      "route": "/login",
       "serve": "/.auth/login/google"
     }
   ],

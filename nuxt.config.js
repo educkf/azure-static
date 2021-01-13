@@ -1,9 +1,8 @@
 
 export default {
   target: 'static',
-  /*
-  ** Headers of the page
-  */
+  components: true,
+
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -15,37 +14,23 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
+
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
+
   css: [
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
+
   plugins: [
   ],
-  /*
-  ** Nuxt.js dev-modules
-  */
+
   buildModules: [
+    '@nuxtjs/tailwindcss'
   ],
-  /*
-  ** Nuxt.js modules
-  */
+
   modules: [
   ],
-  /*
-  ** Build configuration
-  */
+
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend (config, ctx) {
     }
   }
