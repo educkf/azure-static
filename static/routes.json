@@ -5,7 +5,7 @@
       "allowedRoles": [
         "administrator"
       ],
-      "statusCode": 403
+      "statusCode": 401
     },
     {
       "route": "/fake3",
@@ -20,6 +20,11 @@
     },
     {
       "errorType": "Unauthorized_MissingRoles",
+      "serve": "/login",
+      "statusCode": 200
+    },
+    {
+      "errorType": "Unauthenticated",
       "serve": "/login",
       "statusCode": 200
     }
