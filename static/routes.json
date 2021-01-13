@@ -21,12 +21,12 @@
     {
       "errorType": "Unauthorized_MissingRoles",
       "serve": "/login",
-      "statusCode": 200
+      "statusCode": 302
     },
     {
       "errorType": "Unauthenticated",
       "serve": "/login",
-      "statusCode": 200
+      "statusCode": 302
     }
   ]
 }
