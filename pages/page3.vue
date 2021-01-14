@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto">
     <h1 class="text-5xl font-bold title">
-      Page 3
+      Page 3 - Logged users only!
     </h1>
 
     <hr class="my-4">

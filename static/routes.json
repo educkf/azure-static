@@ -3,6 +3,13 @@
     {
       "route": "/page3",
       "allowedRoles": [
+        "authenticated"
+      ],
+      "statusCode": 401
+    },
+    {
+      "route": "/page4",
+      "allowedRoles": [
         "administrator"
       ],
       "statusCode": 401
