@@ -28,12 +28,12 @@
     },
     {
       "errorType": "Unauthorized_MissingRoles",
-      "serve": "/login",
+      "serve": "/no-permission",
       "statusCode": 302
     },
     {
       "errorType": "Unauthenticated",
-      "serve": "/login",
+      "serve": "/no-permission",
       "statusCode": 302
     }
   ]
