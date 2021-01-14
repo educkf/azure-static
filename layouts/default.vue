@@ -12,10 +12,11 @@ export default {
 	},
 	methods: {
 		async getUserInfo() {
-			const response = await fetch("/.auth/me");
-			const payload = await response.json();
-			const { clientPrincipal } = payload;
-			this.$store.commit('user', clientPrincipal);
+			fetch("/.auth/me")
+				.then(response => response.json())
+				.then(data => {
+					this.$store.commit('user', data.clientPrincipal);
+				});
 		}
 	}
 }
