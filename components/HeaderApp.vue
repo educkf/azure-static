@@ -20,7 +20,7 @@
 <script>
 export default {
 	computed: {
-		async user() {
+		user() {
 			return this.$store.state.user;
 		}
 	}
