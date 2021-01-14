@@ -15,7 +15,8 @@ export default {
 			fetch("/.auth/me")
 				.then(response => response.json())
 				.then(data => {
-					this.$store.commit('user', data.clientPrincipal);
+					console.log(data);
+					this.$store.commit('set_user', data.clientPrincipal);
 				});
 		}
 	}

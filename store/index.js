@@ -5,5 +5,9 @@ export default {
 		};
 	},
 
-	mutations: {},
+	mutations: {
+		set_user(state, payload) {
+			state.user = payload;
+		}
+	},
 };
