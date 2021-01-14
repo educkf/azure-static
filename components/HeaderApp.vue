@@ -9,7 +9,22 @@
 			<a href="/fake3" class="px-2 mx-2">fake3</a>
 		</nav>
 
-		<a href="/login">Login</a>
+		<a v-if="!user" href="/login">Login</a>
+		<div v-else>
+			olá, {{ user.userDetails }} <span class="mx-4 border-l border-gray-200"></span>
+			<a href="/.auth/logout">Logout</a>
+		</div>
 	</header>
 </template>
+
+<script>
+export default {
+	computed: {
+		async user() {
+			return this.$store.state.user;
+		}
+	}
+}
+</script>
+
 
