@@ -1,11 +1,22 @@
 {
-  "name": "azure-static",
+  "name": "githubactions",
   "version": "1.0.0",
-  "description": "",
+  "description": "My super-excellent Nuxt.js project",
+  "author": "Eduardo Ferreira",
+  "private": true,
   "scripts": {
-    "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "dev": "nuxt",
+    "build": "nuxt generate",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
 }
