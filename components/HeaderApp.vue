@@ -13,7 +13,7 @@
 		<a v-if="!user" href="/login">Login</a>
 		<div v-else>
 			olá, {{ user.userDetails }} <span class="mx-4 border-l border-gray-200"></span>
-			<a href="/.auth/logout">Logout</a>
+			<a href="/logout">Logout</a>
 		</div>
 	</header>
 </template>

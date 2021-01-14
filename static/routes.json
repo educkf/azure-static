@@ -20,7 +20,7 @@
     },
     {
       "route": "/login",
-      "serve": "/.auth/login/google"
+      "serve": "/.auth/login/aad"
     },
     {
       "route": "/logout",
